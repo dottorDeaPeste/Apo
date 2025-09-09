@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <title>Kontakt – Abraham Company</title>
+    <meta name="description" content="Kontakta Abraham Company för mer information om våra snickeri‑ och byggtjänster i Stockholms län eller för att begära en kostnadsfri offert.">
+    <meta name="robots" content="index,follow,max-image-preview:large">
+    <meta name="keywords" content="kontakta Abraham Company, byggfirma Stockholm, snickeri offert, kundservice">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+<body class="bg-white text-gray-800 antialiased">
+    <!-- Header -->
+    <header class="bg-white shadow-md fixed top-0 inset-x-0 z-50">
+        <nav class="container mx-auto px-4 sm:px-6 py-3 flex items-center justify-between">
+            <a href="index.html" class="text-2xl font-semibold text-gray-900">Abraham&nbsp;Company</a>
+            <div class="hidden md:flex space-x-6">
+                <a href="index.html" class="hover:text-blue-600">Hem</a>
+                <a href="tjanster.html" class="hover:text-blue-600">Tjänster</a>
+                <a href="om-oss.html" class="hover:text-blue-600">Om&nbsp;oss</a>
+                <a href="kontakt.html" class="hover:text-blue-600 font-semibold">Kontakt</a>
+            </div>
+            <div class="md:hidden" x-data="{ open: false }">
+                <button @click="open = !open" class="text-gray-700 focus:outline-none">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" /></svg>
+                </button>
+                <div x-show="open" @click.away="open = false" class="absolute right-0 mt-2 w-48 bg-white shadow-md rounded-md py-2">
+                    <a href="index.html" class="block px-4 py-2 hover:bg-gray-100">Hem</a>
+                    <a href="tjanster.html" class="block px-4 py-2 hover:bg-gray-100">Tjänster</a>
+                    <a href="om-oss.html" class="block px-4 py-2 hover:bg-gray-100">Om oss</a>
+                    <a href="kontakt.html" class="block px-4 py-2 bg-gray-100 font-semibold">Kontakt</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <main class="pt-24 pb-16">
+        <section class="container mx-auto px-4 sm:px-6">
+            <h1 class="text-4xl font-bold mb-6">Kontakta oss</h1>
+            <p class="text-gray-700 mb-8 max-w-2xl">Har du frågor om våra tjänster eller vill du begära en kostnadsfri offert? Tveka inte att höra av dig via formuläret nedan, ring oss eller skicka ett e‑post. Vi svarar så fort vi kan.</p>
+            <div class="md:flex md:space-x-10">
+                <!-- Contact form -->
+                <div class="md:w-1/2 mb-8 md:mb-0">
+                    <form action="mailto:kontakt@abrahamcompany.se" method="post" enctype="text/plain" class="space-y-4">
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-1" for="namn">Namn</label>
+                            <input type="text" id="namn" name="Namn" required class="w-full border border-gray-300 p-3 rounded-md focus:border-blue-500 focus:ring-blue-500">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-1" for="email">E‑post</label>
+                            <input type="email" id="email" name="E-post" required class="w-full border border-gray-300 p-3 rounded-md focus:border-blue-500 focus:ring-blue-500">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-1" for="telefon">Telefon</label>
+                            <input type="tel" id="telefon" name="Telefon" class="w-full border border-gray-300 p-3 rounded-md focus:border-blue-500 focus:ring-blue-500">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-1" for="meddelande">Meddelande</label>
+                            <textarea id="meddelande" name="Meddelande" rows="5" required class="w-full border border-gray-300 p-3 rounded-md focus:border-blue-500 focus:ring-blue-500"></textarea>
+                        </div>
+                        <div>
+                            <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 rounded-md">Skicka</button>
+                        </div>
+                        <p class="text-xs text-gray-600">Genom att skicka formuläret godkänner du vår <a href="integritetspolicy.html" class="text-blue-600 hover:underline">integritetspolicy</a>.</p>
+                    </form>
+                </div>
+                <!-- Contact info and map -->
+                <div class="md:w-1/2">
+                    <div class="space-y-4 mb-6">
+                        <div>
+                            <h2 class="text-2xl font-semibold mb-2">Kontaktuppgifter</h2>
+                            <p>Telefon: <a href="tel:+46769876543" class="text-blue-600 hover:underline">076‑987&nbsp;65&nbsp;43</a></p>
+                            <p>E‑post: <a href="mailto:kontakt@abrahamcompany.se" class="text-blue-600 hover:underline">kontakt@abrahamcompany.se</a></p>
+                            <p>Adress: Centrumvägen&nbsp;14, 145&nbsp;51&nbsp;Fittja</p>
+                            <p>Öppettider: Mån–Tor 08:00–17:00, Fre 08:00–16:00</p>
+                        </div>
+                        <div>
+                            <h2 class="text-2xl font-semibold mb-2">Hitta hit</h2>
+                            <div class="w-full h-64">
+                                <!-- OpenStreetMap embed: centrera på Fittja -->
+                                <iframe class="w-full h-full rounded-md" loading="lazy" src="https://www.openstreetmap.org/export/embed.html?bbox=17.86%2C59.23%2C17.88%2C59.25&amp;layer=mapnik&amp;marker=59.239%2C17.869" style="border:0;" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 py-8">
+        <div class="container mx-auto px-4 sm:px-6 grid gap-8 md:grid-cols-3">
+            <div>
+                <h3 class="text-xl font-semibold mb-2 text-white">Kontakt</h3>
+                <p>Telefon: <a href="tel:+46769876543" class="hover:underline">076‑987&nbsp;65&nbsp;43</a></p>
+                <p>E‑post: <a href="mailto:kontakt@abrahamcompany.se" class="hover:underline">kontakt@abrahamcompany.se</a></p>
+                <p>Adress: Centrumvägen&nbsp;14, 145&nbsp;51&nbsp;Fittja</p>
+                <p>Öppettider: Mån–Tor 08:00–17:00, Fre 08:00–16:00</p>
+            </div>
+            <div>
+                <h3 class="text-xl font-semibold mb-2 text-white">Sidor</h3>
+                <ul class="space-y-1">
+                    <li><a href="index.html" class="hover:underline">Hem</a></li>
+                    <li><a href="tjanster.html" class="hover:underline">Tjänster</a></li>
+                    <li><a href="projekt.html" class="hover:underline">Projekt</a></li>
+                    <li><a href="om-oss.html" class="hover:underline">Om&nbsp;oss</a></li>
+                    <li><a href="kontakt.html" class="hover:underline">Kontakt</a></li>
+                    <li><a href="integritetspolicy.html" class="hover:underline">Integritetspolicy</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-xl font-semibold mb-2 text-white">Om Abraham</h3>
+                <p>Abraham är din partner för alla typer av snickeri‑ och byggprojekt i Stockholmsområdet. Vi tar oss an utmaningar med engagemang och professionalitet.</p>
+                <p class="mt-4">&copy; <span id="year-k"></span> Abraham&nbsp;Company. Alla rättigheter förbehållna.</p>
+            </div>
+        </div>
+        <script>document.getElementById('year-k').textContent = new Date().getFullYear();</script>
+    </footer>
+
+    <!-- Cookie banner -->
+    <div id="cookie-banner" x-data="{open: !localStorage.getItem('cookieAccepted')}" x-show="open" x-cloak class="fixed bottom-0 inset-x-0 bg-gray-900 text-gray-100 px-4 py-3 flex flex-col sm:flex-row sm:items-center sm:justify-between shadow-lg">
+        <p class="mb-2 sm:mb-0 text-sm">Vi använder cookies för att förbättra din upplevelse. Genom att fortsätta accepterar du vår <a href="integritetspolicy.html" class="underline text-blue-400">integritetspolicy</a>.</p>
+        <button @click="localStorage.setItem('cookieAccepted', 'true'); open = false" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-md text-sm">Acceptera</button>
+    </div>
+</body>
+</html>

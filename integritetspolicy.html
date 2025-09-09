@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <title>Integritetspolicy – Abraham Company</title>
+    <meta name="description" content="Läs hur Abraham Company behandlar dina personuppgifter. Vi värnar om din integritet och följer gällande dataskyddslagstiftning (GDPR).">
+    <meta name="robots" content="index,follow,max-image-preview:large">
+    <meta name="keywords" content="integritetspolicy, GDPR, personuppgifter, Abraham Company">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+<body class="bg-white text-gray-800 antialiased">
+    <!-- Header -->
+    <header class="bg-white shadow-md fixed top-0 inset-x-0 z-50">
+        <nav class="container mx-auto px-4 sm:px-6 py-3 flex items-center justify-between">
+            <a href="index.html" class="text-2xl font-semibold text-gray-900">Abraham&nbsp;Company</a>
+            <div class="hidden md:flex space-x-6">
+                <a href="index.html" class="hover:text-blue-600">Hem</a>
+                <a href="tjanster.html" class="hover:text-blue-600">Tjänster</a>
+                <a href="om-oss.html" class="hover:text-blue-600">Om&nbsp;oss</a>
+                <a href="kontakt.html" class="hover:text-blue-600">Kontakt</a>
+                <a href="integritetspolicy.html" class="hover:text-blue-600 font-semibold">Integritetspolicy</a>
+            </div>
+            <div class="md:hidden" x-data="{ open: false }">
+                <button @click="open = !open" class="text-gray-700 focus:outline-none">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" /></svg>
+                </button>
+                <div x-show="open" @click.away="open = false" class="absolute right-0 mt-2 w-48 bg-white shadow-md rounded-md py-2">
+                    <a href="index.html" class="block px-4 py-2 hover:bg-gray-100">Hem</a>
+                    <a href="tjanster.html" class="block px-4 py-2 hover:bg-gray-100">Tjänster</a>
+                    <a href="om-oss.html" class="block px-4 py-2 hover:bg-gray-100">Om oss</a>
+                    <a href="kontakt.html" class="block px-4 py-2 hover:bg-gray-100">Kontakt</a>
+                    <a href="integritetspolicy.html" class="block px-4 py-2 bg-gray-100 font-semibold">Integritetspolicy</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <main class="pt-24 pb-16">
+        <section class="container mx-auto px-4 sm:px-6 max-w-3xl">
+            <h1 class="text-4xl font-bold mb-6">Integritetspolicy</h1>
+            <p class="text-gray-700 mb-4">Din integritet är viktig för oss. Denna integritetspolicy beskriver hur vi samlar in, använder och skyddar dina personuppgifter i enlighet med dataskyddsförordningen (GDPR).</p>
+
+            <h2 class="text-2xl font-semibold mt-8 mb-2">1. Personuppgifter vi samlar in</h2>
+            <p class="text-gray-700 mb-4">Vi samlar in personuppgifter som du frivilligt lämnar till oss, t.ex. när du kontaktar oss via formulär eller e‑post. Detta kan inkludera namn, e‑postadress, telefonnummer och adress.</p>
+
+            <h2 class="text-2xl font-semibold mt-8 mb-2">2. Hur vi använder personuppgifterna</h2>
+            <p class="text-gray-700 mb-4">Personuppgifter används för att kunna besvara dina förfrågningar, ge offerter och utföra de avtalade tjänsterna. Vi kan även använda dem för bokföring och fakturering i enlighet med svensk lag.</p>
+
+            <h2 class="text-2xl font-semibold mt-8 mb-2">3. Lagring och skydd</h2>
+            <p class="text-gray-700 mb-4">Vi lagrar dina personuppgifter endast så länge som krävs för att uppfylla ändamålen ovan eller så länge lagen kräver. Vi vidtar lämpliga tekniska och organisatoriska säkerhetsåtgärder för att skydda dina uppgifter mot obehörig åtkomst.</p>
+
+            <h2 class="text-2xl font-semibold mt-8 mb-2">4. Dela uppgifter med tredje part</h2>
+            <p class="text-gray-700 mb-4">Vi delar inte dina uppgifter med tredjepartsleverantörer utan ditt samtycke, om inte det krävs enligt lag eller avtal. I de fall vi använder underleverantörer säkerställer vi att de följer GDPR.</p>
+
+            <h2 class="text-2xl font-semibold mt-8 mb-2">5. Dina rättigheter</h2>
+            <p class="text-gray-700 mb-4">Du har rätt att begära tillgång till de uppgifter vi har om dig, rättelse av felaktiga uppgifter och under vissa omständigheter radering av uppgifter. Du kan även invända mot behandling eller begära begränsning. Kontakta oss via e‑post om du vill utöva dina rättigheter.</p>
+
+            <h2 class="text-2xl font-semibold mt-8 mb-2">6. Kontaktinformation</h2>
+            <p class="text-gray-700 mb-4">För frågor om vår integritetspolicy eller hantering av personuppgifter, kontakta oss på:</p>
+            <ul class="list-disc list-inside text-gray-700 mb-4">
+                <li>E‑post: <a href="mailto:kontakt@abrahamcompany.se" class="text-blue-600 hover:underline">kontakt@abrahamcompany.se</a></li>
+                <li>Adress: Centrumvägen&nbsp;14, 145&nbsp;51&nbsp;Fittja</li>
+                <li>Telefon: <a href="tel:+46769876543" class="text-blue-600 hover:underline">076‑987&nbsp;65&nbsp;43</a></li>
+            </ul>
+
+            <p class="text-gray-600 mt-8">Denna policy uppdaterades senast <span id="policy-date"></span>.</p>
+            <script>document.getElementById('policy-date').textContent = new Date().toLocaleDateString('sv-SE');</script>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 py-8">
+        <div class="container mx-auto px-4 sm:px-6 grid gap-8 md:grid-cols-3">
+            <div>
+                <h3 class="text-xl font-semibold mb-2 text-white">Kontakt</h3>
+                <p>Telefon: <a href="tel:+46769876543" class="hover:underline">076‑987&nbsp;65&nbsp;43</a></p>
+                <p>E‑post: <a href="mailto:kontakt@abrahamcompany.se" class="hover:underline">kontakt@abrahamcompany.se</a></p>
+                <p>Adress: Centrumvägen&nbsp;14, 145&nbsp;51&nbsp;Fittja</p>
+                <p>Öppettider: Mån–Tor 08:00–17:00, Fre 08:00–16:00</p>
+            </div>
+            <div>
+                <h3 class="text-xl font-semibold mb-2 text-white">Sidor</h3>
+                <ul class="space-y-1">
+                    <li><a href="index.html" class="hover:underline">Hem</a></li>
+                    <li><a href="tjanster.html" class="hover:underline">Tjänster</a></li>
+                    <li><a href="projekt.html" class="hover:underline">Projekt</a></li>
+                    <li><a href="om-oss.html" class="hover:underline">Om&nbsp;oss</a></li>
+                    <li><a href="kontakt.html" class="hover:underline">Kontakt</a></li>
+                    <li><a href="integritetspolicy.html" class="hover:underline">Integritetspolicy</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-xl font-semibold mb-2 text-white">Om Abraham</h3>
+                <p>Abraham värnar om din integritet och samlar endast in nödvändiga uppgifter för att kunna erbjuda våra tjänster.</p>
+                <p class="mt-4">&copy; <span id="year-i"></span> Abraham&nbsp;Company. Alla rättigheter förbehållna.</p>
+            </div>
+        </div>
+        <script>document.getElementById('year-i').textContent = new Date().getFullYear();</script>
+    </footer>
+
+    <!-- Cookie banner -->
+    <div id="cookie-banner" x-data="{open: !localStorage.getItem('cookieAccepted')}" x-show="open" x-cloak class="fixed bottom-0 inset-x-0 bg-gray-900 text-gray-100 px-4 py-3 flex flex-col sm:flex-row sm:items-center sm:justify-between shadow-lg">
+        <p class="mb-2 sm:mb-0 text-sm">Vi använder cookies för att förbättra din upplevelse. Genom att fortsätta accepterar du vår <a href="integritetspolicy.html" class="underline text-blue-400">integritetspolicy</a>.</p>
+        <button @click="localStorage.setItem('cookieAccepted', 'true'); open = false" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-md text-sm">Acceptera</button>
+    </div>
+</body>
+</html>

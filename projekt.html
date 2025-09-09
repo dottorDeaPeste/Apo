@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <title>Projekt – Abraham Company</title>
+    <meta name="description" content="Denna sida innehåller exempelprojekt utförda av Abraham Company. För närvarande visar vi inte projekt offentligt.">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+<body class="bg-white text-gray-800 antialiased">
+    <!-- Header -->
+    <header class="bg-white shadow-md fixed top-0 inset-x-0 z-50">
+        <nav class="container mx-auto px-4 sm:px-6 py-3 flex items-center justify-between">
+            <a href="index.html" class="text-2xl font-semibold text-gray-900">Abraham&nbsp;Company</a>
+            <div class="hidden md:flex space-x-6">
+                <a href="index.html" class="hover:text-blue-600">Hem</a>
+                <a href="tjanster.html" class="hover:text-blue-600">Tjänster</a>
+                <a href="om-oss.html" class="hover:text-blue-600">Om&nbsp;oss</a>
+                <a href="kontakt.html" class="hover:text-blue-600">Kontakt</a>
+            </div>
+            <div class="md:hidden" x-data="{ open: false }">
+                <button @click="open = !open" class="text-gray-700 focus:outline-none">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" /></svg>
+                </button>
+                <div x-show="open" @click.away="open = false" class="absolute right-0 mt-2 w-48 bg-white shadow-md rounded-md py-2">
+                    <a href="index.html" class="block px-4 py-2 hover:bg-gray-100">Hem</a>
+                    <a href="tjanster.html" class="block px-4 py-2 hover:bg-gray-100">Tjänster</a>
+                    <a href="om-oss.html" class="block px-4 py-2 hover:bg-gray-100">Om oss</a>
+                    <a href="kontakt.html" class="block px-4 py-2 hover:bg-gray-100">Kontakt</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <main class="pt-24 pb-16">
+        <section class="container mx-auto px-4 sm:px-6">
+            <h1 class="text-4xl font-bold mb-4">Våra projekt</h1>
+            <p class="text-gray-700 mb-10 max-w-3xl">Här presenterar vi ett urval av våra genomförda projekt för att ge dig en känsla av vårt hantverk och vårt engagemang. Kontakta oss för fler referenser eller för att besöka ett pågående projekt.</p>
+            <!-- Project Grid -->
+            <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+                <!-- Project Item 1 -->
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                    <div class="h-40 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=800&q=80');"></div>
+                    <div class="p-5">
+                        <h3 class="text-xl font-semibold mb-2">Villa­renovering i Saltsjöbaden</h3>
+                        <p class="text-gray-600 mb-3">Totalrenovering av 70‑talsvilla med nytt kök, badrum och fasad. Projektet inkluderade även energieffektiva fönsterbyten och ny altan.</p>
+                    </div>
+                </div>
+                <!-- Project Item 2 -->
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                    <div class="h-40 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1554475901-4538ddfbccc9?auto=format&fit=crop&w=800&q=80');"></div>
+                    <div class="p-5">
+                        <h3 class="text-xl font-semibold mb-2">Attefallshus i Huddinge</h3>
+                        <p class="text-gray-600 mb-3">Byggnation av modernt attefallshus på 25 m² med kök och badrum. Perfekt gästhus eller kontor med stora ljusinsläpp och inglasad uteplats.</p>
+                    </div>
+                </div>
+                <!-- Project Item 3 -->
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                    <div class="h-40 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1519710164239-da123dc03ef4?auto=format&fit=crop&w=800&q=80');"></div>
+                    <div class="p-5">
+                        <h3 class="text-xl font-semibold mb-2">Inglasad balkong i Sundbyberg</h3>
+                        <p class="text-gray-600 mb-3">Installation av inglasning med skjutbara partier för balkong. Förlänger balkongsäsongen och ger extra boyta utan att kompromissa med utsikten.</p>
+                    </div>
+                </div>
+                <!-- Project Item 4 -->
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                    <div class="h-40 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1560185127-6ed3dc6f7d4e?auto=format&fit=crop&w=800&q=80');"></div>
+                    <div class="p-5">
+                        <h3 class="text-xl font-semibold mb-2">Finsnickeri: specialbyggd trappa</h3>
+                        <p class="text-gray-600 mb-3">Design och tillverkning av en svängd trappa i ek med integrerad LED‑belysning. Unik lösning anpassad efter kundens önskemål.</p>
+                    </div>
+                </div>
+                <!-- Project Item 5 -->
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                    <div class="h-40 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1515270142333-d14929cae0f4?auto=format&fit=crop&w=800&q=80');"></div>
+                    <div class="p-5">
+                        <h3 class="text-xl font-semibold mb-2">Köksrenovering på Södermalm</h3>
+                        <p class="text-gray-600 mb-3">Fullständig köksrenovering inklusive nya skåp, bänkskivor i sten och integrerad belysning. Hög funktionalitet och modern design.</p>
+                    </div>
+                </div>
+                <!-- Project Item 6 -->
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                    <div class="h-40 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1472224371017-08207f84aaae?auto=format&fit=crop&w=800&q=80');"></div>
+                    <div class="p-5">
+                        <h3 class="text-xl font-semibold mb-2">Badrumsrenovering i Bromma</h3>
+                        <p class="text-gray-600 mb-3">Komplett badrumsrenovering med vattenburen golvvärme, kakel av hög kvalitet och skräddarsydd inredning.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 py-8">
+        <div class="container mx-auto px-4 sm:px-6 grid gap-8 md:grid-cols-3">
+            <div>
+                <h3 class="text-xl font-semibold mb-2 text-white">Kontakt</h3>
+                <p>Telefon: <a href="tel:+46769876543" class="hover:underline">076‑987&nbsp;65&nbsp;43</a></p>
+                <p>E‑post: <a href="mailto:kontakt@abrahamcompany.se" class="hover:underline">kontakt@abrahamcompany.se</a></p>
+                <p>Adress: Centrumvägen&nbsp;14, 145&nbsp;51&nbsp;Fittja</p>
+                <p>Öppettider: Mån–Tor 08:00–17:00, Fre 08:00–16:00</p>
+            </div>
+            <div>
+                <h3 class="text-xl font-semibold mb-2 text-white">Sidor</h3>
+                <ul class="space-y-1">
+                    <li><a href="index.html" class="hover:underline">Hem</a></li>
+                    <li><a href="tjanster.html" class="hover:underline">Tjänster</a></li>
+                    <li><a href="projekt.html" class="hover:underline">Projekt</a></li>
+                    <li><a href="om-oss.html" class="hover:underline">Om&nbsp;oss</a></li>
+                    <li><a href="kontakt.html" class="hover:underline">Kontakt</a></li>
+                    <li><a href="integritetspolicy.html" class="hover:underline">Integritetspolicy</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-xl font-semibold mb-2 text-white">Om Abraham</h3>
+                <p>Abraham är ett lokalt företag specialiserat på snickeri- och byggtjänster. Genom åren har vi genomfört allt från små renoveringar till omfattande nybyggnationer.</p>
+                <p class="mt-4">&copy; <span id="year-p"></span> Abraham&nbsp;Company. Alla rättigheter förbehållna.</p>
+            </div>
+        </div>
+        <script>document.getElementById('year-p').textContent = new Date().getFullYear();</script>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <title>Abraham&nbsp;Company&nbsp;– Snickeri&nbsp;&amp;&nbsp;Byggtjänster i Stockholm</title>
+    <meta name="description" content="Abraham Company erbjuder professionella snickeri‑ och byggtjänster i Stockholms län med fokus på kvalitet, service och hållbara lösningar.">
+    <meta name="robots" content="index,follow,max-image-preview:large">
+    <meta name="keywords" content="snickeri Stockholm, byggtjänster, renovering, köksrenovering, badrumsrenovering, finsnickeri, tillbyggnad, fönsterbyte, inglasning">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <!-- Tailwind via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Alpine.js for small interaktioner -->
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <!-- Open Graph metadata -->
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="sv_SE">
+    <meta property="og:title" content="Abraham Company – Snickeri &amp; Byggtjänster i Stockholm">
+    <meta property="og:description" content="Professionella bygg‑ och snickeritjänster i Stockholms län. Kontakta Abraham Company för en kostnadsfri offert.">
+    <meta property="og:url" content="https://abrahamcompany.se/">
+    <meta property="og:site_name" content="Abraham Company">
+
+    <!-- Structured data for LocalBusiness and FAQPage -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "@id": "https://abrahamcompany.se/#business",
+      "name": "Abraham Company",
+      "url": "https://abrahamcompany.se/",
+      "telephone": "+46769876543",
+      "email": "kontakt@abrahamcompany.se",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Centrumvägen 14",
+        "postalCode": "145 51",
+        "addressLocality": "Fittja",
+        "addressRegion": "Stockholm",
+        "addressCountry": "SE"
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday"],
+          "opens": "08:00",
+          "closes": "17:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Friday",
+          "opens": "08:00",
+          "closes": "16:00"
+        }
+      ],
+      "areaServed": {
+        "@type": "AdministrativeArea",
+        "name": "Stockholms län"
+      },
+      "sameAs": [
+        "https://snickeridesign.se/",
+        "https://www.norrortsgruppen.se/"
+      ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Vilka typer av projekt utför ni?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Vi utför alla typer av bygg‑ och snickeriarbeten i Stockholms län, inklusive renoveringar av kök och badrum, finsnickeri, tillbyggnader, och inglasningar."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Kan jag få en kostnadsfri offert?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ja, vi erbjuder kostnadsfri offert på alla projekt. Kontakta oss via formuläret på vår kontaktsida eller ring oss direkt."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Arbetar ni med ROT‑avdrag?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Absolut. Vi har erfarenhet av ROT‑projekt och kan hjälpa dig att maximera avdraget för ditt bygg‑ eller renoveringsarbete."
+          }
+        }
+      ]
+    }
+    </script>
+</head>
+<body class="bg-white text-gray-800 antialiased">
+    <!-- Header -->
+    <header class="bg-white shadow-md fixed top-0 inset-x-0 z-50">
+        <nav class="container mx-auto px-4 sm:px-6 py-3 flex items-center justify-between">
+            <a href="index.html" class="text-2xl font-semibold text-gray-900">Abraham&nbsp;Company</a>
+            <div class="hidden md:flex space-x-6">
+                <a href="index.html" class="hover:text-blue-600">Hem</a>
+                <a href="tjanster.html" class="hover:text-blue-600">Tjänster</a>
+                <a href="om-oss.html" class="hover:text-blue-600">Om&nbsp;oss</a>
+                <a href="kontakt.html" class="hover:text-blue-600">Kontakt</a>
+            </div>
+            <!-- Mobile Menu -->
+            <div class="md:hidden" x-data="{ open: false }">
+                <button @click="open = !open" class="text-gray-700 focus:outline-none">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" /></svg>
+                </button>
+                <div x-show="open" @click.away="open = false" class="absolute right-0 mt-2 w-48 bg-white shadow-md rounded-md py-2">
+                    <a href="index.html" class="block px-4 py-2 hover:bg-gray-100">Hem</a>
+                    <a href="tjanster.html" class="block px-4 py-2 hover:bg-gray-100">Tjänster</a>
+                    <a href="om-oss.html" class="block px-4 py-2 hover:bg-gray-100">Om oss</a>
+                    <a href="kontakt.html" class="block px-4 py-2 hover:bg-gray-100">Kontakt</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main content -->
+    <main class="pt-24">
+        <!-- Hero Section -->
+        <section class="relative bg-cover bg-center" style="background-image: url('hero.png');">
+            <div class="bg-black bg-opacity-50">
+                <div class="container mx-auto px-4 sm:px-6 py-24 text-center text-white">
+                    <h1 class="text-4xl sm:text-5xl font-bold mb-4">Byggdrömmar till verklighet i Stockholms län</h1>
+                    <p class="text-lg sm:text-xl mb-6">Abraham Company är din partner för allt från finsnickeri till totalrenoveringar – alltid med kvalitet, precision och teknisk kompetens.</p>
+                    <a href="kontakt.html" class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-3 rounded-md">Få kostnadsfri offert</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Overview -->
+        <section class="py-16">
+            <div class="container mx-auto px-4 sm:px-6 text-center">
+                <h2 class="text-3xl font-bold mb-4">Våra tjänster</h2>
+                <p class="max-w-2xl mx-auto text-gray-600 mb-10">Vi erbjuder ett brett utbud av snickeri- och byggtjänster för både privatpersoner och företag. Nedan hittar du några av våra specialiteter.</p>
+                <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+                    <!-- Service Card: Bygg & renovering -->
+                    <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                        <div class="h-40 bg-cover bg-center" style="background-image: url('bygg-renovering.png');"></div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-2">Bygg &amp; renovering</h3>
+                            <p class="text-gray-600 mb-4">Vi tar hand om både små och stora byggprojekt – från grund till färdigt resultat.</p>
+                            <a href="tjanster.html#bygg" class="text-blue-600 hover:underline">Läs mer &raquo;</a>
+                        </div>
+                    </div>
+                    <!-- Service Card: Kök & badrum -->
+                    <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                        <div class="h-40 bg-cover bg-center" style="background-image: url('kok-badrum.png');"></div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-2">Kök &amp; badrum</h3>
+                            <p class="text-gray-600 mb-4">Kvalitativa renoveringar av kök och badrum med fokus på funktion och design.</p>
+                        <a href="tjanster.html#kok-badrum" class="text-blue-600 hover:underline">Läs mer &raquo;</a>
+                        </div>
+                    </div>
+                    <!-- Service Card: Finsnickeri -->
+                    <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                        <div class="h-40 bg-cover bg-center" style="background-image: url('finsnickeri.png');"></div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-2">Finsnickeri &amp; speciallösningar</h3>
+                            <p class="text-gray-600 mb-4">Unika möbler och skräddarsydda snickerier som skapas efter dina önskemål.</p>
+                            <a href="tjanster.html#finsnickeri" class="text-blue-600 hover:underline">Läs mer &raquo;</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="py-16 bg-gray-100">
+            <div class="container mx-auto px-4 sm:px-6">
+                <div class="md:flex md:items-center">
+                    <div class="md:w-1/2 mb-8 md:mb-0">
+                        <h2 class="text-3xl font-bold mb-4">Varför välja Abraham?</h2>
+                        <p class="text-gray-700 mb-4">Med lång erfarenhet inom bygg och snickeri erbjuder vi professionella tjänster med hög kvalitet. Vi lägger stor vikt vid noggrannhet, transparent kommunikation och att hålla tidsplaner.</p>
+                        <ul class="list-disc list-inside text-gray-700">
+                            <li>Certifierade och erfarna hantverkare</li>
+                            <li>Konkurrenskraftiga priser & ROT-avdrag</li>
+                            <li>Garantier på utfört arbete</li>
+                            <li>Personlig service från start till slut</li>
+                        </ul>
+                        <div class="mt-6">
+                            <a href="om-oss.html" class="text-blue-600 hover:underline">Läs mer om oss &raquo;</a>
+                        </div>
+                    </div>
+                    <div class="md:w-1/2 md:pl-10">
+                        <!-- Replace remote Unsplash image with local stylised illustration to avoid broken links -->
+                        <img class="rounded-lg shadow-lg" src="about.png" alt="Snickare arbetar">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="py-16">
+            <div class="container mx-auto px-4 sm:px-6 text-center">
+                <h2 class="text-3xl font-bold mb-4">Redo att förverkliga ditt projekt?</h2>
+                <p class="text-gray-700 mb-6">Låt oss ta hand om ditt nästa bygg- eller renoveringsprojekt. Kontakta oss redan idag för en kostnadsfri offert.</p>
+                <a href="kontakt.html" class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold px-8 py-3 rounded-md">Kontakta oss</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 py-8">
+        <div class="container mx-auto px-4 sm:px-6 grid gap-8 md:grid-cols-3">
+            <div>
+                <h3 class="text-xl font-semibold mb-2 text-white">Kontakt</h3>
+                <p>Telefon: <a href="tel:+46769876543" class="hover:underline">076‑987&nbsp;65&nbsp;43</a></p>
+                <p>E‑post: <a href="mailto:kontakt@abrahamcompany.se" class="hover:underline">kontakt@abrahamcompany.se</a></p>
+                <p>Adress: Centrumvägen&nbsp;14, 145&nbsp;51&nbsp;Fittja</p>
+                <p>Öppettider: Mån–Tor 08:00–17:00, Fre 08:00–16:00</p>
+            </div>
+            <div>
+                <h3 class="text-xl font-semibold mb-2 text-white">Sidor</h3>
+                <ul class="space-y-1">
+                    <li><a href="index.html" class="hover:underline">Hem</a></li>
+                    <li><a href="tjanster.html" class="hover:underline">Tjänster</a></li>
+                    <li><a href="projekt.html" class="hover:underline">Projekt</a></li>
+                    <li><a href="om-oss.html" class="hover:underline">Om&nbsp;oss</a></li>
+                    <li><a href="kontakt.html" class="hover:underline">Kontakt</a></li>
+                    <li><a href="integritetspolicy.html" class="hover:underline">Integritetspolicy</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-xl font-semibold mb-2 text-white">Om Abraham</h3>
+                <p>Abraham är ett svenskt företag som erbjuder professionella snickeri‑ och byggtjänster. Vi har gedigen erfarenhet och samarbetar med våra systerbolag All Snickeri & Design och Norrortsgruppen.</p>
+                <p class="mt-4">&copy; <span id="current-year"></span> Abraham&nbsp;Company. Alla rättigheter förbehållna.</p>
+            </div>
+        </div>
+        <script>document.getElementById('current-year').textContent = new Date().getFullYear();</script>
+    </footer>
+
+    <!-- Cookie banner -->
+    <div id="cookie-banner" x-data="{open: !localStorage.getItem('cookieAccepted')}" x-show="open" x-cloak class="fixed bottom-0 inset-x-0 bg-gray-900 text-gray-100 px-4 py-3 flex flex-col sm:flex-row sm:items-center sm:justify-between shadow-lg">
+        <p class="mb-2 sm:mb-0 text-sm">Vi använder cookies för att förbättra din upplevelse. Genom att fortsätta accepterar du vår <a href="integritetspolicy.html" class="underline text-blue-400">integritetspolicy</a>.</p>
+        <button @click="localStorage.setItem('cookieAccepted', 'true'); open = false" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-md text-sm">Acceptera</button>
+    </div>
+</body>
+</html>
